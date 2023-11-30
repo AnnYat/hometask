@@ -1,0 +1,23 @@
+<div class="every_tab" [ngClass]="{'every_tab_active': isActive === true}">
+    
+    <div [ngSwitch]="chips">
+        <img src="/assets/icons/education.svg" *ngSwitchCase="'Education'"/>
+        <img src="/assets/icons/dining.svg" *ngSwitchCase="'Dining'"/>
+        <img src="/assets/icons/attractions.svg" *ngSwitchCase="'Attractions'"/>
+        <img src="/assets/icons/promotions.svg" *ngSwitchCase="'Promotions'"/>
+        <img src="/assets/icons/office.svg" *ngSwitchCase="'Office'"/>
+        <img src="/assets/icons/family.svg" *ngSwitchCase="'Family'"/>
+        <img src="/assets/icons/health.svg" *ngSwitchCase="'Health'"/>
+        <img src="/assets/icons/sports.svg" *ngSwitchCase="'Sports'"/>
+        <img src="/assets/icons/travel.svg" *ngSwitchCase="'Travel'"/>
+        <img *ngSwitchDefault/>
+   </div>
+
+    {{chips}}
+
+    <div *ngIf="isEditable" (click)="click()" style="cursor:pointer;">
+        <img *ngIf="isActive" src="/assets/icons/cross.svg"/>
+        <img *ngIf="!isActive" src="/assets/icons/plus.svg"/>
+    </div>
+    
+</div>

@@ -1,0 +1,1 @@
+.every_tab{background:white;color:black;display:flex;padding:4px 12px 4px 8px;align-items:center;gap:8px;border-radius:32px;border:1px solid var(--outline-stroke-default, #A5A8BA)}.every_tab_active{border-radius:32px;border:1px solid var(--elements-buttons-rested, #6168E4);background:var(--surface-lighter, #EBEEFF)}
